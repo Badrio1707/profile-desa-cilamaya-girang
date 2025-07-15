@@ -1,19 +1,13 @@
-import React from 'react'
 import { Outlet } from 'react-router-dom'
+import Navbar from '../../../components/client/Navbar'
+import Footer from '../../../components/client/Footer'
 
 const RootLayout = () => {
   return (
     <>
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
+    <Navbar />
     <Outlet />
-    <footer>Footer</footer>
-    <p>© 2023 Your Company</p>
+    <Footer />
     </>
   )
 }
